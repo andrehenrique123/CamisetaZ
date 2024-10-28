@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CamisetaZ</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">   
+</head>
+<body>
+  <header class="cabeçalho">
+    <div class="caixa">
+        <input type="checkbox" id="menu" class="caixa-botao">
+        <label for="menu">
+            <span class="cabeçalho-menu-amburguer caixa-imagem"></span>
+        </label>
+        <ul class="lista-menu">
+            <li class="lista-menu-titulo">Categorias</li>
+            <li class="lista-menu-itens"><a href="#" class="lista-menu-link">dryfit</a></li>
+            <li class="lista-menu-itens"><a href="#" class="lista-menu-link">oversized</a></li>
+            <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Forza Horizon</a></li>
+            <li class="lista-menu-itens"><a href="#" class="lista-menu-link">Call of Duty</a></li>
+        </ul>
+        <a href="#"><img class="caixa-imagem" src="carrinho.svg" alt="carrinho de compras"></a>
+    </div>
+   
+    <div class="caixa">
+      <a href="#"><img class="caixa-imagem" src="avatar.png" alt="avatar"></a>
+      <a href="#"><img class="caixa-imagem" src="casinha.png" alt="home"></a>
+      <a href="#"><img class="caixa-imagem" src="coraçao.png" alt="meus favoritos"></a>
+    </div>
+  </header>
+  
+  <section class="banner">
+    <h2 class="banner-titulo">Você Já sabe por onde começar?</h2>
+    <p class="banner-texto">Saiba mais sobre sua camisa favorita</p>
+    <div class="banner-pesquisa-container">
+        <input type="search" class="banner-pesquisa" placeholder="Qual será seu estilo de hoje?">
+        <button class="banner-pesquisa-botão">Pesquisar</button>
+    </div>
+  </section>  
+  
+  <section class="carrossel">
+    <h2 class="carrossel-titulo">CONHEÇA NOSSAS CAMISAS</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="dryfit.webp" alt="Camiseta Dryfit" class="card-imagem">
+            <div class="card-infos">
+              <h3 class="card-titulo">Camiseta Dryfit</h3>
+              <p class="card-preco">R$ 49,90</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="dryfit2.webp" alt="Camiseta Dryfit Verde" class="card-imagem">
+            <div class="card-infos">
+              <h3 class="card-titulo">Camiseta Dryfit Verde</h3>
+              <p class="card-preco">R$ 54,90</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="oversized.webp" alt="Camiseta Oversized" class="card-imagem">
+            <div class="card-infos">
+              <h3 class="card-titulo">Camiseta Oversized</h3>
+              <p class="card-preco">R$ 59,90</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="oversized2.svg" alt="Camiseta Oversized Vermelha" class="card-imagem">
+            <div class="card-infos">
+              <h3 class="card-titulo">Camiseta Oversized Vermelha</h3>
+              <p class="card-preco">R$ 62,90</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="oversized3.webp" alt="Camiseta Oversized Branca" class="card-imagem">
+            <div class="card-infos">
+              <h3 class="card-titulo">Camiseta Oversized Branca</h3>
+              <p class="card-preco">R$ 57,90</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: { el: '.swiper-pagination', type: 'bullets' },
+    });
+  </script>
+</body>
+</html>
